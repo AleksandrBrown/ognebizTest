@@ -321,6 +321,39 @@ body span {
   color: red;
 }
 
+.container {
+  display: flow-root !important;
+  box-sizing: content-box !important;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+@media (min-width: 960px) {
+  .container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: none !important;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    box-sizing: border-box !important;
+  }
+}
+.carousel-indicators [data-bs-target] {
+  width: 250px !important;
+  height: 140px !important;
+}
+
 .panels > div {
   transition: 0.4s;
 }
